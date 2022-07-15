@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right bottom, black, rgb(88, 173, 243));
+}
+
+.main {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 500px;
+    width: 350px;
+    box-shadow: 0 10px 20px black;
+    background-size: cover;
+    font-family: 'Abel', sans-serif;
+    background-image: url('PicsArt_03-25-07.06.50.jpg');
+    
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(to top, rgba(28, 171, 238, 0.7), rgba(253, 252, 252, 0.21));
+    color: black;
+}
+
+.content {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+h3 {
+    color: black;
+}
+h2 {
+    font-size: xx-large;
+    letter-spacing: -1px;
+    color: black;
+}
+span {
+    color: black;
+}
+
+.details {
+    font-style: italic;
+    color:black;
+    margin-top: 20px;
+}
+.font{
+    font-style:italic;
+    color: black;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    top: -30px;
+    position: absolute;
+    left: 85%;
+}
+
+.icons i {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(202, 215, 226);
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: white;
+}
+
+@media screen and(min-width:200px) {
+    .container {
+        height: 350px;
+        width: 200px;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    .icons i {
+        font-size: large;
+        margin-bottom: 10px;
+    }
+}
+
+#button {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 280px;
+    
+}
+button {
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	width: 130px;
+	margin: 30px 0;
+	border-radius: 25px;
+	border: none;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	font-weight: 500;
+	background-color: rgba(0,0,0,0.5);
+	color: #E6EBEE;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:focus {
+	display: none;
+}
+
+button:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+h2{
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.2) ;
+}
+
+p{
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2) ;
+}
+
+h3{
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
